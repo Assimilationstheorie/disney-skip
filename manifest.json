@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "DisneySkip",
+  "description": "DisneySkip",
+  "version": "1.0",
+  "icons": {
+    "48": "movie.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.disneyplus.com/de-de/*"
+      ],
+      "js": ["disney.js"]
+    }
+  ]
+}
